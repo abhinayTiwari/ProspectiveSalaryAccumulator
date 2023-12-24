@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <title>Professional Career Earnings Calculator</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+
+<body>
+   <dvi class="container h-100">
+      <div class="row justify-content-center">
+         <div class="col-sm-12 col-md-6">
+            <div class="d-flex justify-content-center">
+               <div class="card mt-5 col-xs-12 animated bounceInDown calculator">
+                  <div class="card-header">
+                     <h4>Professional Career Earnings Calculator</h4>
+                  </div>
+                  <div class="card-body">
+                     <div >
+                        <div class="input-group">
+                           <label for="baseSalary">Base Salary:</label>
+                           <input type="number" id="baseSalary" placeholder="Enter base salary">
+                        </div>
+                        <div class="input-group">
+                           <label for="annualIncrease">Annual Increase (%):</label>
+                           <input type="number" id="annualIncrease" placeholder="Enter annual increase">
+                        </div>
+                        <div class="input-group">
+                           <label for="yearlyBonus">Yearly Bonus:</label>
+                           <input type="number" id="yearlyBonus" placeholder="Enter yearly bonus">
+                        </div>
+                        <div class="input-group">
+                           <label for="careerYears">Number of Years:</label>
+                           <input type="number" id="careerYears" placeholder="Enter career years">
+                        </div>
+                        <div class="input-group">
+                           <label for="currencyType">Currency Type:</label>
+                           <select id="currencyType">
+                              <option value="$">USD</option>
+                              <option value="€">EUR</option>
+                              <option value="£">GBP</option>
+                              <option value="₹">INR</option>
+                           </select>
+                        </div>
+
+                     </div>
+                  </div>
+                  <div class="card-footer">
+                     <p id="result"></p>
+                     <button onclick="calculateEarnings()" class="btn btn-success submit_btn">Calculate</button>
+                     <div id="totalEarnings"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+      </div>
+
+
+
+   </dvi>
+
+
+   <script src="script.js"></script>
+</body>
+
+</html>
